@@ -1,13 +1,46 @@
+/* Por padrão, mostra o conteúdo e esconde o aviso */
+#rotate-warning {
+    display: none;
+}
+
+@media (orientation: portrait) {
+    #content {
+      display: none;
+    }
+    #rotate-warning {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        color: black;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2em;
+        text-align: center;
+        z-index: 9999;
+    }
+}
+/* Se quiser aplicar estilos específicos quando em paisagem */
+@media (orientation: landscape) {
+    #content {
+      padding: 1em;
+      background-color: #eef;
+    }
+}    
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
-    margin: 20px;
+    margin: 1%;
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5%;
 }
 
 .paciente {
@@ -21,15 +54,15 @@ body {
 }
 
 .img-exame, .img-mapa {
-    width: 512px;
-    height: 512px;
+    width: 35%;
+    height: auto;
     object-fit: cover;
 }
 
 .info {
-    flex-grow: 1;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 10px;
+    width: 25%;
+    /* box-sizing: border-box; flex-grow: 1;*/
 }
 
 .titulo-normal {
