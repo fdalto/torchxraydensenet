@@ -1,0 +1,6 @@
+abrir neste link
+http://192.168.0.16:8000/index.html
+
+Rodar no terminal na pasta
+python3 -m http.server 8000 --bind 0.0.0.0
+

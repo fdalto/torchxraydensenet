@@ -1,0 +1,3 @@
+docker run --rm --gpus all -it \
+  -v /media/vitor/DataSets/IAChest/DOCKER:/app \
+  chest-infer-gpu
