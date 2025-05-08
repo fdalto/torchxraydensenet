@@ -1,0 +1,19 @@
+label,score
+Atelectasis,0.78350437
+Consolidation,0.6830976
+Infiltration,0.7769721
+Pneumothorax,0.5065161
+Edema,0.8970255
+Emphysema,0.5091965
+Fibrosis,0.5901382
+Effusion,0.886309
+Pneumonia,0.71854305
+Pleural_Thickening,0.51115793
+Cardiomegaly,0.8956956
+Nodule,0.515527
+Mass,0.5113985
+Hernia,0.029183729
+Lung Lesion,0.65466213
+Fracture,0.5551655
+Lung Opacity,0.8808831
+Enlarged Cardiomediastinum,0.6535026
