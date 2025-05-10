@@ -91,3 +91,27 @@ body {
     font-size: 16px;
     white-space: pre-line;
 } 
+
+.resultado {
+    position: relative;
+    white-space: pre-line; /* para manter \n visível */
+}
+
+.botao-errou {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+    z-index: 10;
+}
+
+.img-errou {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
