@@ -47,7 +47,21 @@ async function carregarPacientes() {
             const resultado = document.createElement('div');
             resultado.className = 'resultado';
             resultado.textContent = resultadoTexto;
+            resultado.style.position = 'relative'; // garante ancoragem do botão
 
+            const botao = document.createElement('button');
+            botao.className = 'botao-errou';
+            botao.onclick = () => gravar_errou();
+
+            const imgBotao = document.createElement('img');
+            imgBotao.src = 'ErrouFausto.svg';
+            imgBotao.alt = 'Errou!';
+            imgBotao.className = 'img-errou';
+
+            botao.appendChild(imgBotao);
+            resultado.appendChild(botao);
+
+            // montar árvore
             info.appendChild(titulo);
             info.appendChild(resultado);
 
@@ -62,5 +76,4 @@ async function carregarPacientes() {
         console.error('Erro ao carregar arquivos:', e);
     }
 }
-
 window.onload = carregarPacientes;
